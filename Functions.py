@@ -6,7 +6,7 @@ import re
 def find_links(all_letters):
     links = []
     for letter in all_letters:
-        url = 'https://www.informs.org/About-INFORMS/History-of-O.R.-Excellence/Biographical-Profiles/(alpha)/' + letter
+        url = 'https://www.informs.org/Explore/History-of-O.R.-Excellence/Biographical-Profiles/(alpha)/' + letter
         # print(url)
         sourcecode = requests.get(url)
         txt = sourcecode.text
